@@ -1,18 +1,10 @@
 Algoritmo sin_titulo
 	//precio del Ladrillo
 	precio_Ladrillo <- 100
-	//Se le pregunta al usuario la opción de edificio de edificio que quiera 
-	Escribir "Elija el edificio que desee consultar (Tenga en cuenta que todos los edificios tienen una entrada de 2 ladrillos de alto por uno de ancho)"
-	//se le dan 3 opciones de edificio a elegir
-	Escribir "(1)64uh tres plantas  (2)112uh tres plantas (3)144uh cuatro plantas"
-	Leer op
-	//menu de opciones
-	Segun op Hacer
-		1:
-			Escribir "Para un edificio de 64uh el costo seria: " (precio_Ladrillo/4)*64
-		2:
-			Escribir "Para un edificio de 112uh el costo seria: " (precio_Ladrillo/4)*112
-		3:
-			Escribir "Para un edificio de 144uh el costo seria: " (precio_Ladrillo/4)*144
-	Fin Segun
+	//Se le pregunta al usuario cuantas UH quiere que tenga el edificio de edificio
+	Escribir "De cuentas UH quiere que sea el edificio"
+	Leer uh
+	ladrillos <- uh/4
+	cant_ladrillos <- trunc(ladrillos)
+	Escribir "Se irian " cant_ladrillos " ladrillos en total con un costo de: " cant_ladrillos*precio_Ladrillo
 FinAlgoritmo
