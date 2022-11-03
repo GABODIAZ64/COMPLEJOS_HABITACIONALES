@@ -1,8 +1,18 @@
 Algoritmo sin_titulo
-	Escribir "CUANTAS UNIDADES HABITACIONALES REQUIERE"
-	Leer CANT_UH
-	PRECIO_UH=25
-	PREC_EDIFICIO=PRECIO_UH*CANT_UH
-	ESCRIBIR'SU EDIFICIO CUESTA $',PREC_EDIFICIO
-	
+	//precio del Ladrillo
+	precio_Ladrillo <- 100
+	//Se le pregunta al usuario la opción de edificio de edificio que quiera 
+	Escribir "Elija el edificio que desee consultar (Tenga en cuenta que todos los edificios tienen una entrada de 2 ladrillos de alto por uno de ancho)"
+	//se le dan 3 opciones de edificio a elegir
+	Escribir "(1)64uh tres plantas  (2)112uh tres plantas (3)144uh cuatro plantas"
+	Leer op
+	//menu de opciones
+	Segun op Hacer
+		1:
+			Escribir "Para un edificio de 64uh el costo seria: " (precio_Ladrillo/4)*64
+		2:
+			Escribir "Para un edificio de 112uh el costo seria: " (precio_Ladrillo/4)*112
+		3:
+			Escribir "Para un edificio de 144uh el costo seria: " (precio_Ladrillo/4)*144
+	Fin Segun
 FinAlgoritmo
